@@ -6,7 +6,7 @@ import timemachine from '../Assets/time-machine.png'
 
 const Footer = () => {
   return (
-    <footer className="relative mt-20 bg-[#0a0a0a] text-[#c3d2f6] px-6 sm:px-16 pt-0 pb-10 font-cyberpunk overflow-hidden">
+    <footer className="relative mt-20 bg-[#0a0a0a] text-[#c3d2f6] px-6 sm:px-16 pt-0  font-cyberpunk overflow-hidden">
 
       {/* SVG Wave Top Border */}
       <div className="w-full overflow-hidden leading-none">
@@ -30,8 +30,8 @@ const Footer = () => {
         
         {/* Brand & Tagline */}
         <div className="text-center md:text-left">
-          <h1 className="text-2xl md:text-3xl font-bold text-[#5ce8cb]">Uday Venkat</h1>
-          <p className="text-sm text-[#c3d2f6] mt-1">Designs that think. Code that speaks.</p>
+          <h1 className="text-2xl md:text-3xl font-bold text-[#5ce8cb] ">Uday Venkat</h1>
+          <p className="text-sm text-[#c3d2f6] mt-1">Designs that Speak. Code that thinks.</p>
           <p className="font-barcode text-lg text-[#5ce8cb] tracking-wider mt-2">*Designs that think. Code that speaks.*</p>
         </div>
 
@@ -79,12 +79,8 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className=' mt-10 text-center text-xs text-[#a1aecc]'>Crafted with passion and pixels</div>
 
       {/* Bottom Line */}
-      <div className=" text-center text-xs text-[#a1aecc]">
-        © {new Date().getFullYear()} Uday Venkat. All rights reserved.
-      </div>
       <div className='grid place-items-end sm:pt-0 pt-4'>
   <a
     href="https://udayvenkat.netlify.app" // ⬅️ your actual old portfolio link
@@ -96,6 +92,23 @@ const Footer = () => {
     <p className="text-xs font-cyberpunk">Portfolio Portal</p>
   </a>
           </div>
+                  <div className="flex text-gray-400 flex-col justify-center py-2 border-t border-gray-500 mt-6">
+          <p className="text-sm font-medium text-center">
+            © {new Date().getFullYear()}  Uday Venkat. All rights reserved.
+          </p>
+
+          <p className="text-sm text-gray-400 px-3 text-center">
+            <span className="font-semibold">Crafted by</span>{" "}
+            <span className="font-sarina text-[#ff9966] z-50 ">
+              <a href="https://www.udayvenkat.in">Uday Venkat</a>
+            </span>
+            <span className="px-2"> || </span>
+            <span className="font-sarina text-[#00B7E6] z-50 ">
+              <a href="https://designwithriddle.online/"> Riddle</a>
+            </span>
+          </p>
+        </div>
+
     </footer>
   );
 };

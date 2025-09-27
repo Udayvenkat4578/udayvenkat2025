@@ -10,6 +10,7 @@ import About from '../components/About'
 import Footer from '../components/Footer'
 import Liketit from '../components/Liketit'
 import Acrosstheweb from'../components/Acrosstheweb'
+import Figma from '../components/Figma'
 
 const Main = () => {
   return (
@@ -27,6 +28,7 @@ const Main = () => {
                   <About/>
 
             <Projects/>
+            <Figma/>
 
       {/* <Followme/>
       <Skill1/>*/}

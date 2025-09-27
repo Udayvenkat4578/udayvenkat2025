@@ -5,6 +5,9 @@ import external from '../Assets/external.png';
 import vitalflowlogo from '../Assets/vitalflowlogo.png';
 import artoslogo from '../Assets/artoslogo.png';
 import purelypro from '../Assets/purelypro.png'
+import Riddlepro from '../Assets/riddlepro.png'
+import snappadpro from '../Assets/snappadpro.png'
+import sppro from '../Assets/sppro.png'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -32,8 +35,35 @@ const Work = () => {
   }, []);
 
   const projects = [
-    {
+        {
       id: 1,
+      img: Riddlepro,
+      title: 'We Design to Develop',
+      description:
+        "Got an idea? Let’s shape it, refine it, and turn it into brilliance.",
+      url: 'https://designwithriddle.online/',
+      type: 'code',
+    },
+    {
+      id: 2,
+      img: sppro,
+      title: 'sptelugintiruchulu',
+      description:"Eats, Treats,Pickles & Sweets All Your Cravings in One Place.",
+      url: 'https://sptelugintiruchulu.netlify.app/',
+      type: 'code',
+    },
+    {
+      id: 3,
+      img: snappadpro,
+      title: 'snapp AD',
+      description:
+        "Your Brand. On the Big Screen. Seen by Millions.",
+      url: 'https://snapp-ad.vercel.app/',
+      type: 'code',
+    },
+
+    {
+      id: 4,
       img: vitalflowlogo,
       title: 'Vital Flow',
       description:
@@ -43,7 +73,7 @@ const Work = () => {
       message:"🚧Pardon our dust — improvements in progress.",
     },
     {
-      id: 2,
+      id: 5,
       img: purelypro,
       title: 'Hyperlocal vendor delivery',
       description:
@@ -52,7 +82,7 @@ const Work = () => {
       type: 'code',
     },
     {
-      id: 3,
+      id: 6,
       img: artoslogo,
       title: 'Artos Soft Drinks',
       description:
@@ -75,7 +105,7 @@ const Work = () => {
   return (
     <div className="sm:p-3 p-2">
        <p
-        className="mt-2 pb-3 text-[#5ce8cb] font-cyberpunk font-bold sm:text-[30px] text-[20px] cursor-default text-center"
+        className="mt-2 pb-3 text-[#5ce8cb] font-cyberpunk font-bold sm:text-[36px] text-[20px] cursor-default text-center"
         data-aos="zoom-in"
       >
         Some Of My Latest Work
@@ -93,7 +123,7 @@ const Work = () => {
               {/* Tilt only on image */}
 <img
   ref={(el) => (imageRefs.current[index] = el)}
-  className="w-[85%] mx-auto mt-1 rounded-sm border-2 border-white"
+  className="w-[85%] mx-auto mt-1 rounded-sm "
   src={project.img}
   alt={project.title}
 />              <div>
