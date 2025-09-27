@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import AOS from 'aos';
+         import SplitText from "./SplitText";
+         
+
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import arrow from '../Assets/expand-arrows.png';
@@ -72,86 +75,44 @@ const Herosec = () => {
         setStatus('idle');
       });
   };
+  const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
+
 
   return (
     <div className="overflow-x-hidden sm:pb-3 pb-4 sm:pt-4 pt-2">
-      {/* 🔷 MODAL POPUP FORM */}
-      {showModal && (
-        <div className="fixed inset-0 bg-gray-400 bg-opacity-20 backdrop-blur-sm z-50 flex items-center justify-center px-4">
-          <div className="bg-[#142444] border-2 border-[#5ce8cb] rounded-md p-6 w-full max-w-md text-[#c3d2f6] font-cyberpunk relative">
-            <h2 className="text-xl font-bold mb-4 text-[#5ce8cb]">Let's Connect</h2>
-            <form onSubmit={handleSubmit} className="space-y-4 text-sm">
-              <div>
-                <label htmlFor="name" className="block mb-1">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  placeholder="Enter Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 rounded bg-transparent border border-[#5ce8cb] focus:ring-2 focus:ring-[#5ce8cb] outline-none"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block mb-1">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  placeholder="email4578@example.com"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 rounded bg-transparent border border-[#5ce8cb] focus:ring-2 focus:ring-[#5ce8cb] outline-none"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block mb-1">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="3"
-                  required
-                  placeholder="What's on your mind?"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 rounded bg-transparent border border-[#5ce8cb] focus:ring-2 focus:ring-[#5ce8cb] outline-none"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                disabled={status === 'sending'}
-                className="w-full py-2 bg-[#5ce8cb] text-[#142444] font-bold rounded hover:scale-105 transition-all"
-              >
-                {status === 'idle' && 'Send'}
-                {status === 'sending' && 'Sending...'}
-                {status === 'sent' && 'Sent ✅'}
-              </button>
-              <button
-                type="button"
-                onClick={() => setShowModal(false)}
-                className="mt-2 w-full py-2 text-[#5ce8cb] hover:text-red-400 transition-all underline"
-              >
-                Close
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
 
-      {/* 💠 EXISTING HERO SECTION (UNTOUCHED) */}
       <div className="grid grid-cols-1 cursor-default z-30">
         <div className="sm:ml-11 sm:pl-11 ml-4 mr-4 sm:mr-0 sm:pt-1 pt-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-out">
-          <h1 className="text-[45px] md:text-[96px] font-cyberpunk font-bold text-[#c3d2f6]">Uday Venkat.</h1>
+
+
+
+          <h1 className="">
+            <SplitText
+  text="Uday venkat."
+  className="text-[45px] md:text-[96px] font-cyberpunk font-bold text-[#c3d2f6]"
+  delay={140}
+  duration={0.6}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+/>
+            
+            
+            
+</h1>
           <span style={{ color: '#5ce8cb', fontWeight: 'bold', fontSize: '1.75em', font: 'cyberpunk' }}>
             <Typewriter
               words={[
                 'I’m a Frontend Developer',
                 'I’m a Ui/UX Designer',
                 'I’m a ReactJS Developer',
-                'I’m a MERN Stack aspirant',
+                'I’m a MERN Stack Dev',
               ]}
               loop={170}
               cursor
@@ -213,8 +174,33 @@ const Herosec = () => {
                 </Link>
               </div>
 
-              <h1 className="text-[48px] md:text-[54px] font-cyberpunk font-bold text-[#c3d2f6]">Designer &</h1>
-              <h1 className="text-[48px] md:text-[54px] font-cyberpunk font-bold text-[#c3d2f6] md:pb-6 pb-0">Developer</h1>
+              <h1 className="">            <SplitText
+  text="Designer &"
+  className="text-[48px] md:text-[54px] font-cyberpunk font-bold text-[#c3d2f6]"
+  delay={140}
+  duration={0.6}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+/>
+</h1>
+              <h1 className=""><SplitText
+  text="Developer"
+  className="text-[48px] md:text-[54px] font-cyberpunk font-bold text-[#c3d2f6] md:pb-6 pb-0"
+  delay={140}
+  duration={0.6}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+/></h1>
 
               <div className='grid text-right md:hidden justify-end'>
                 <Link to='/smallcontact'>

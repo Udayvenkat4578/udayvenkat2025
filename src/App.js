@@ -6,7 +6,6 @@ import Work from './components/Work'
 import Follow from './components/Follow'
 import Error from './components/Error'
 import Smallcontact from './components/Smallcontact'
-import Enter from './Gcomponents/Enter'
 
 const App = () => {
   return (
@@ -27,7 +26,6 @@ const App = () => {
 
           <Route path='/work' element={<Work/>}/>
           <Route path="*" element={<Error/>}/>
-<Route path="/enter" element={<Enter/>}/>
 
         </Routes>
         </BrowserRouter>

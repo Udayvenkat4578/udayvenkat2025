@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Outlet, } from "react-router-dom";
 import brush from '../Assets/brush.png'
 import code from '../Assets/code.png'
-import research from '../Assets/research.png'
+import research from '../Assets/text-tool.png'
 import exp from '../Assets/exp.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -29,7 +29,7 @@ function Products() {
         </div>
     <div className="pt-2 px-9 " data-aos="fade-up"  data-aos-offset="300"
     data-aos-easing="ease-in-out sm:h-full h-screen">
-      <div><p className="text-center pt-8 font-semibold font-cyberpunk text-[36px] cursor-default sm:font-bold text-[#5ce8cb] ">Design. Code. Repeat</p>
+      <div><p className="text-center pt-8 font-semibold font-cyberpunk text-[36px] cursor-default sm:font-bold text-[#5ce8cb] ">Design. Code. Deploy. Repeat</p>
       <p>        <p className="text-center font-cyberpunk text-[#aab7d7]"> An evolving journey through code, design, and everything in between</p>
 </p>
       </div>

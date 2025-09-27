@@ -43,7 +43,7 @@ emailjs.send(
   return (
     <div className="min-h-screen px-5 py-14 text-[#c3d2f6] font-cyberpunk relative">
 
-      <p className="text-[#5ce8cb] font-cyberpunk font-bold md:text-[32px] text-[20px] cursor-default text-center mb-5"         data-aos="zoom-in"
+      <p className="text-[#5ce8cb] font-cyberpunk font-bold md:text-[36px] text-[20px] cursor-default text-center mb-5"         data-aos="zoom-in"
 >
         Let’s Talk
       </p>
@@ -73,11 +73,11 @@ emailjs.send(
               type="text"
               name="name"
               id="name"
-              placeholder="John Doe"
+              placeholder="Enter your name"
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 rounded border-2 border-[#5ce8cb] text-[#c3d2f6] bg-transparent outline-none focus:ring-2 focus:ring-[#5ce8cb]"
+              className="w-full px-4 py-2  border-2 border-[#5ce8cb] text-[#c3d2f6] bg-transparent outline-none focus:ring-2 focus:ring-[#5ce8cb]"
             />
           </div>
 
@@ -87,11 +87,11 @@ emailjs.send(
               type="email"
               name="email"
               id="email"
-              placeholder="john@example.com"
+              placeholder="Enter your email"
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 rounded border-2 border-[#5ce8cb] text-[#c3d2f6] bg-transparent outline-none focus:ring-2 focus:ring-[#5ce8cb]"
+              className="w-full px-4 py-2  border-2 border-[#5ce8cb] text-[#c3d2f6] bg-transparent outline-none focus:ring-2 focus:ring-[#5ce8cb]"
             />
           </div>
 
@@ -105,18 +105,18 @@ emailjs.send(
               required
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-2 rounded border-2 border-[#5ce8cb] text-[#c3d2f6] bg-transparent outline-none focus:ring-2 focus:ring-[#5ce8cb]"
+              className="w-full px-4 py-2 border-2 border-[#5ce8cb] text-[#c3d2f6] bg-transparent outline-none focus:ring-2 focus:ring-[#5ce8cb]"
             ></textarea>
           </div>
 
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="w-full border border-[#5ce8cb] bg-[#5ce8cb] text-[#142444] py-2 font-bold rounded hover:scale-105 transition-all duration-200"
+            className="w-full border border-[#5ce8cb] bg-[#5ce8cb] text-[#142444] py-2 font-bold hover:scale-105 transition-all duration-200"
           >
             {status === 'idle' && 'Send Message'}
             {status === 'sending' && 'Sending...'}
-            {status === 'sent' && 'Done ✅'}
+            {status === 'sent' && 'Sent ✅'}
           </button>
         </form>
       </div>

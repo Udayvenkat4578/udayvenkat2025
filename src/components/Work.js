@@ -18,6 +18,10 @@ import amazon from '../Assets/pro1.png';
 import eve from '../Assets/pro7.png';
 import dev from '../Assets/dev.png';
 import Footer from './Footer';
+import Riddlepro from '../Assets/riddlepro.png'
+import snappadpro from '../Assets/snappadpro.png'
+import sppro from '../Assets/sppro.png'
+
 
 const Work = () => {
 
@@ -28,7 +32,34 @@ const Work = () => {
 
   const projects = [
     {
-      id: 1,
+          id: 1,
+      img: Riddlepro,
+      title: 'We Design to Develop',
+      description:
+        "Got an idea? Let’s shape it, refine it, and turn it into brilliance together.",
+      url: 'https://designwithriddle.online/',
+      type: 'code',
+    },
+    {
+      id: 2,
+      img: sppro,
+      title: 'sptelugintiruchulu',
+      description:"Eats, Treats,Pickles & Sweets All Your Cravings in One Place.",
+      url: 'https://sptelugintiruchulu.netlify.app/',
+      type: 'code',
+    },
+    {
+      id: 3,
+      img: snappadpro,
+      title: 'snapp AD',
+      description:
+        "Your Brand. On the Big Screen. Seen by Millions.",
+      url: 'https://snapp-ad.vercel.app/',
+      type: 'code',
+    },
+
+    {
+      id: 4,
       img: vitalflowNew,
       title: 'Vital Flow',
       description: 'Vital Flow is a streamlined platform that facilitates timely connections between blood donors and recipients.',
@@ -36,7 +67,7 @@ const Work = () => {
       type: 'code',
     },
     {
-      id: 2,
+      id: 5,
       img: portfolioNew,
       title: 'Personal Portfolio',
       description: 'A showcase of creativity and innovation in web development and design.',
@@ -44,7 +75,7 @@ const Work = () => {
       type: 'code',
     },
     {
-      id: 3,
+      id: 6,
       img: artoslogo,
       title: 'Artos Soft Drinks',
       description: 'A vibrant blend of taste and refreshment for bold experiences.',
@@ -52,7 +83,7 @@ const Work = () => {
       type: 'code',
     },
         {
-      id: 4,
+      id: 7,
       img: purelypro,
       title: 'Hyperlocal vendor delivery',
       description: 'Fresh picks Trusted Sellers, Hyperfast Delivery for Hyperlocal Vendors. Daily!',
@@ -61,7 +92,7 @@ const Work = () => {
     },
 
     {
-      id: 5,
+      id: 8,
       img: cryptolink,
       title: 'CryptoLink',
       description: 'CryptoLink - Your Gateway to Crypto Knowledge and Real-Time Prices. Explore market trends, prices, and crypto info.',
@@ -69,7 +100,7 @@ const Work = () => {
       type: 'code',
     },
     {
-      id: 6,
+      id: 9,
       img: snaptrackr,
       title: 'SnapTrackr',
       description: 'Explore 2M+ images with a user-friendly search interface. Find stunning visuals for any creative need.',
@@ -77,7 +108,7 @@ const Work = () => {
       type: 'code',
     },
     {
-      id: 7,
+      id: 10,
       img: vitalflowOld,
       title: 'Vital Flow (Old)',
       description: 'An earlier iteration of the Vital Flow platform focused on blood donor-recipient connectivity.',
@@ -85,7 +116,7 @@ const Work = () => {
       type: 'code',
     },
     {
-      id: 8,
+      id: 11,
       img: amazon,
       title: 'Amazon Clone (Redux)',
       description: 'Explore an Amazon-style shopping clone with cart management, item tracking, and Redux integration.',
@@ -93,7 +124,7 @@ const Work = () => {
       type: 'code',
     },
     {
-      id: 9,
+      id: 12,
       img: eve,
       title: 'Eve Healthcare',
       description: 'Smart Clinics platform letting users connect with top medical professionals and schedule visits easily.',
@@ -101,7 +132,7 @@ const Work = () => {
       type: 'Design',
     },
     {
-      id: 10,
+      id: 13,
       img: dev,
       title: "Tomorrow's Creations",
       description: "Stay tuned for what's next! Explore my upcoming website projects, where innovation meets design.",
@@ -138,7 +169,7 @@ const Work = () => {
 {projects.map((project, index) => (
   <React.Fragment key={index}>
     {/* Show heading after 3rd project */}
-    {index === 4 && (
+    {index === 7 && (
       <div className="col-span-full text-center mt-4 mb-2" data-aos="fade-up">
         <h3 className="text-[#9acbff] text-xl sm:text-2xl font-semibold font-cyberpunk tracking-wide pb-2">
           Where it all began
