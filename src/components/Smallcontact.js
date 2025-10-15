@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import connectlogo from '../Assets/connectimg.png'
 import comic2 from '../Assets/comic2.png'
 import Footer from './Footer';
+import Seo from './Seo';
 
 
 const Contact = () => {
@@ -43,6 +44,13 @@ emailjs.send(
 
   return (
     <div>
+      <Seo
+  title="Hire Me "
+  description="Looking for a skilled web developer and UI/UX designer? Connect with Uday Venkat to collaborate on web development projects, creative solutions, and innovative digital experiences."
+  url="https://udayvenkat.in/hire"
+  image="https://udayvenkat.in/preview-hire.png"  // optional: a visual call-to-action image
+/>
+
     <div className="min-h-screen px-5 py-2 text-[#c3d2f6] font-cyberpunk relative">
                 <div className='fixed inset-0'>
                 <img className="object-cover w-screen h-screen  opacity-10   " src={comic2} alt="background" />

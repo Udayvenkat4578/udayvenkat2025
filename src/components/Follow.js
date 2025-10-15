@@ -15,6 +15,7 @@ import 'aos/dist/aos.css'
 import Navbar from '../Gcomponents/Navbar'
 import comic2 from '../Assets/comic2.png'
 import Footer from './Footer'
+import Seo from '../components/Seo';
 
 
 const Followme = () => {
@@ -25,6 +26,12 @@ const Followme = () => {
 
   return (
     <div className=' '>
+         <Seo
+        title="Follow Me"
+        description="Connect with Uday Venkat across social platforms: LinkedIn, GitHub, Medium, Behance, Dribbble, and more."
+        url="https://udayvenkat.in/follow"
+        image="https://udayvenkat.in/preview-follow.png" // optional: social preview image for this page
+      />
         <div className='fixed inset-0'>
                 <img className="object-cover w-screen h-screen  opacity-10   " src={comic2} alt="background" />
                 </div>

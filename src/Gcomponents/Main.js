@@ -11,10 +11,22 @@ import Footer from '../components/Footer'
 import Liketit from '../components/Liketit'
 import Acrosstheweb from'../components/Acrosstheweb'
 import Figma from '../components/Figma'
+import Seo from '../components/Seo'
+import Certificates from '../components/Certificates'
+import Coursera from '../components/Coursera'
 
 const Main = () => {
   return (
-    <div className='"overflow-x-hidden'>
+    <div className='overflow-x-hidden'>
+      <div>
+<Seo
+  title="Uday Venkat || Portfolio"
+  description="Discover the portfolio of Uday Venkat – showcasing projects, design, and web development skills."
+  url="https://udayvenkat.in/"
+  image="https://udayvenkat.in/preview.png"  
+/>
+
+      </div>
               <div className='fixed inset-0'>
                 <img className="object-cover w-screen h-screen  opacity-10   " src={comic1} alt="background" />
                 </div>
@@ -26,7 +38,8 @@ const Main = () => {
       <Herosec/>
       <Mar/>
                   <About/>
-
+<Certificates/>
+<Coursera/>
             <Projects/>
             <Figma/>
 

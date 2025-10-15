@@ -10,7 +10,7 @@ const FigmaSection = () => {
     },[])
     
   return (
-    <section className="w-full px-4 py-10">
+    <section className=" overflow-x-hidden w-full px-4 py-10">
       {/* Heading */}
       <h2         data-aos="zoom-in"
  className="mt-2 pb-3 text-[#5ce8cb] font-cyberpunk font-bold cursor-default text-center text-[24px] sm:text-[36px]">
@@ -23,7 +23,7 @@ const FigmaSection = () => {
         <div className="flex flex-col items-center">
           <h3 className="mb-3 text-[#5ce8cb] font-cyberpunk text-lg sm:text-xl"              data-aos="fade-right"
 >
-            My Designs
+            Tools I Use
           </h3>
           <iframe
             className="w-full h-[300px] rounded-2xl shadow-lg"
@@ -37,7 +37,7 @@ const FigmaSection = () => {
         <div className="flex flex-col items-center">
           <h3 className="mb-3 text-[#5ce8cb] font-cyberpunk text-lg sm:text-xl"              data-aos="fade-right"
 >
-            Tools I Use
+            My Designs
           </h3>
           <iframe
             className="w-full h-[300px] rounded-2xl shadow-lg"

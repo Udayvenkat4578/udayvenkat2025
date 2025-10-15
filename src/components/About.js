@@ -29,7 +29,7 @@ const About = () => {
   ];
 
   return (
-    <div className="pb-11">
+    <div className=" overflow-x-hidden pb-11">
       <p
         className="mt-4 mb-1 text-[#5ce8cb] font-cyberpunk font-bold md:text-[36px] text-[24px] cursor-default text-center"
         data-aos="zoom-in"
