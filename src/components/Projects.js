@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 import arrow from '../Assets/right-arrow.png'
 import external from '../Assets/external.png';
-import vitalflowlogo from '../Assets/vitalflowlogo.png';
+import vitalflowlogo from '../Assets/vitalcover.png';
 import artoslogo from '../Assets/artoslogo.png';
 import purelypro from '../Assets/purelypro.png'
 import Riddlepro from '../Assets/riddlepro.png'
@@ -52,18 +52,8 @@ const Work = () => {
       url: 'https://sptelugintiruchulu.netlify.app/',
       type: 'code',
     },
-    {
-      id: 3,
-      img: snappadpro,
-      title: 'snapp AD',
-      description:
-        "Your Brand. On the Big Screen. Seen by Millions.",
-      url: 'https://snapp-ad.vercel.app/',
-      type: 'code',
-    },
-
-    {
-      id: 4,
+        {
+      id:3,
       img: vitalflowlogo,
       title: 'Vital Flow',
       description:
@@ -72,23 +62,37 @@ const Work = () => {
       type: 'code',
       message:"🚧Pardon our dust — improvements in progress.",
     },
+
     {
-      id: 5,
-      img: purelypro,
-      title: 'Hyperlocal vendor delivery',
+      id: 4,
+      img: snappadpro,
+      title: 'snapp AD',
       description:
-        'Fresh picks Trusted Sellers, Hyperfast Delivery for Hyperlocal Vendors. Daily!',
-      url: 'https://purelypro.netlify.app/',
+        "Your Brand. On the Big Screen. Seen by Millions.",
+      url: 'https://snapp-ad.vercel.app/',
       type: 'code',
     },
-    {
-      id: 6,
+        {
+      id: 5,
       img: artoslogo,
       title: 'Artos Soft Drinks',
       description:
         'A vibrant blend of taste and refreshment for bold experiences.',
       url: 'https://artosdrinks.netlify.app/',
       type: 'code',
+    },
+
+
+    {
+      id: 6,
+      img: purelypro,
+      title: 'Hyperlocal vendor delivery',
+      description:
+        'Fresh picks Trusted Sellers, Hyperfast Delivery for Hyperlocal Vendors. Daily!',
+      url: 'https://purelypro.netlify.app/',
+      type: 'code',
+            message:"🚧This is Purely for design n basic MVP.",
+
     },
   ];
 

@@ -6,10 +6,13 @@ import Work from './components/Work'
 import Follow from './components/Follow'
 import Error from './components/Error'
 import Smallcontact from './components/Smallcontact'
+import { HelmetProvider } from "react-helmet-async";
 
 const App = () => {
   return (
-    <div>
+        <HelmetProvider>
+              <div>
+
       <div className='bg-[#142444] inset-0 '>
         <BrowserRouter>
 <div className='z-10 '>
@@ -17,7 +20,7 @@ const App = () => {
 
         <Routes className='' >
           <Route path='/' element={<Main/>}/>
-          <Route path="follow" element={<Follow/>} />
+          <Route path="/follow" element={<Follow/>} />
 
         <Route path="skills" element={<Skills />}/>
         <Route path='/smallcontact' element={<Smallcontact/>}/>
@@ -31,6 +34,7 @@ const App = () => {
         </BrowserRouter>
       </div>
     </div>
+    </HelmetProvider>
   )
 }
 

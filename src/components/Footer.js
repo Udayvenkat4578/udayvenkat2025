@@ -93,11 +93,11 @@ const Footer = () => {
   </a>
           </div>
                   <div className="flex text-gray-400 flex-col justify-center py-2 border-t border-gray-500 mt-6">
-          <p className="text-sm font-medium text-center">
+          <p className="text-xs font-medium text-center">
             © {new Date().getFullYear()}  Uday Venkat. All rights reserved.
           </p>
 
-          <p className="text-sm text-gray-400 px-3 text-center">
+          <p className="text-xs text-gray-400 px-3 text-center">
             <span className="font-semibold">Crafted by</span>{" "}
             <span className="font-sarina text-[#ff9966] z-50 ">
               <a href="https://www.udayvenkat.in">Uday Venkat</a>

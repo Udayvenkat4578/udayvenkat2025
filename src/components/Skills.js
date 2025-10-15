@@ -11,6 +11,7 @@ import Navbar from "../Gcomponents/Navbar";
 import comic4 from '../Assets/comic4.webp'
 import Skill1 from '../Gcomponents/Skill1'
 import Footer from "./Footer";
+import Seo from "./Seo";
 
 function Products() {
   
@@ -20,6 +21,13 @@ function Products() {
 },[])
         return (
           <div>
+            <Seo
+  title="About Me"
+  description="passionate about creating interactive and innovative digital experiences."
+  url="https://udayvenkat.in/about"
+  image="https://udayvenkat.in/preview-about.png"
+/>
+
                     <div className='fixed inset-0'>
                 <img className="object-cover w-screen h-screen  opacity-10   " src={comic4} alt="background" />
                 </div>

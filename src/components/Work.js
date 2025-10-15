@@ -6,9 +6,10 @@ import external from '../Assets/external.png';
 import comic2 from '../Assets/comic2.png';
 import Navbar from "../Gcomponents/Navbar";
 import purelypro from '../Assets/purelypro.png';
+import Seo from './Seo';
 
 // Updated image imports
-import vitalflowNew from '../Assets/vitalflowlogo.png';
+import vitalflowNew from '../Assets/vitalcover.png';
 import portfolioNew from '../Assets/portfoliologo.png';
 import artoslogo from '../Assets/artoslogo.png';
 import cryptolink from '../Assets/pro5.png';
@@ -144,6 +145,12 @@ const Work = () => {
 
   return (
     <div>
+        <Seo
+        title="Work "
+        description="Explore the portfolio of Uday Venkat – showcasing web development projects, design prototypes, and creative work."
+        url="https://udayvenkat.in/work"
+        image="https://udayvenkat.in/preview-work.png" // optional: unique preview image for Work page
+      />
       {/* Background */}
       <div className='fixed inset-0'>
         <img className="object-cover w-screen h-screen opacity-10" src={comic2} alt="background" />

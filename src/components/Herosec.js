@@ -91,7 +91,7 @@ const Herosec = () => {
           <h1 className="">
             <SplitText
   text="Uday venkat."
-  className="text-[45px] md:text-[96px] font-cyberpunk font-bold text-[#c3d2f6]"
+  className="text-[48px] md:text-[96px] font-cyberpunk font-bold text-[#c3d2f6]"
   delay={140}
   duration={0.6}
   ease="power3.out"
