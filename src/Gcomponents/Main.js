@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Herosec from '../components/Herosec'
 import Mar from '../components/Mar'
 import Skill1 from './Skill1'
@@ -14,8 +14,13 @@ import Figma from '../components/Figma'
 import Seo from '../components/Seo'
 import Certificates from '../components/Certificates'
 import Coursera from '../components/Coursera'
+import Socials from '../components/Socials'
 
 const Main = () => {
+
+  useEffect(() => {
+    console.log("This website is designed and developed by Uday Venkat contact me @ 6281608599 ");
+  }, []);
   return (
     <div className='overflow-x-hidden'>
       <div>
@@ -38,6 +43,7 @@ const Main = () => {
       <Herosec/>
       <Mar/>
                   <About/>
+                  <Socials/>
 <Certificates/>
 <Coursera/>
             <Projects/>

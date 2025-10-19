@@ -53,7 +53,18 @@ const Work = () => {
       type: 'code',
     },
         {
-      id:3,
+      id: 3,
+      img: purelypro,
+      title: 'Hyperlocal vendor delivery',
+      description:
+        'Fresh picks Trusted Sellers, Hyperfast Delivery for Hyperlocal Vendors. Daily!',
+      url: 'https://purelypro.netlify.app/',
+      type: 'code',
+            message:"🚧This is Purely for design n basic MVP.",
+
+    },
+                {
+      id:6,
       img: vitalflowlogo,
       title: 'Vital Flow',
       description:
@@ -63,15 +74,6 @@ const Work = () => {
       message:"🚧Pardon our dust — improvements in progress.",
     },
 
-    {
-      id: 4,
-      img: snappadpro,
-      title: 'snapp AD',
-      description:
-        "Your Brand. On the Big Screen. Seen by Millions.",
-      url: 'https://snapp-ad.vercel.app/',
-      type: 'code',
-    },
         {
       id: 5,
       img: artoslogo,
@@ -84,16 +86,17 @@ const Work = () => {
 
 
     {
-      id: 6,
-      img: purelypro,
-      title: 'Hyperlocal vendor delivery',
+      id: 4,
+      img: snappadpro,
+      title: 'snapp AD',
       description:
-        'Fresh picks Trusted Sellers, Hyperfast Delivery for Hyperlocal Vendors. Daily!',
-      url: 'https://purelypro.netlify.app/',
+        "Your Brand. On the Big Screen. Seen by Millions.",
+      url: 'https://snapp-ad.vercel.app/',
       type: 'code',
-            message:"🚧This is Purely for design n basic MVP.",
-
     },
+
+
+
   ];
 
   const openModal = (project) => {

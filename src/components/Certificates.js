@@ -49,7 +49,7 @@ const Certifications = () => {
   return (
     <div>
       <Seo
-        title="Certifications"
+        title="Home"
         description="Explore Uday Venkat’s professional certifications in UI/UX design, front-end development, and more."
         url="https://udayvenkat.in/certifications"
         image="https://udayvenkat.in/preview-certifications.png"
